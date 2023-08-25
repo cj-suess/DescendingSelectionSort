@@ -52,11 +52,12 @@ public class DescendingOrder {
             if (input == -1) {
                     selectionSortDescendTrace(numbers, numElements);
             } else{
-                    numbers[i] = input;
-                    numElements++;
-                    if(numElements == 10){
+                numbers[i] = input;
+                numElements++;
+
+                if(numElements == 10){
                         selectionSortDescendTrace(numbers, numElements);
-                    }
+                }
             }
         }
     }
